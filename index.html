@@ -1,9 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="style.css">
-	<script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Countryballs Database</h1>
+        </header>
+
+        <!-- Top Navigation Bar -->
+        <nav class="top-nav">
+            <a href="#" id="currentCountries">Current Countries</a>
+            <a href="#" id="formerCountries">Former Countries</a>
+            <a href="#" id="otherSection">Other</a>
+        </nav>
+
+        <!-- Filters section -->
+        <section id="filters">
+            <label for="filterContinent">Continent:</label>
+            <select id="filterContinent">
+                <option value="all">All Continents</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+
+            <label for="filterPhilosophy">Type:</label>
+            <select id="filterPhilosophy">
+                <option value="all">All Types</option>
+                <option value="Communist">Communist</option>
+                <option value="Monarchy">Monarchy</option>
+                <option value="Capitalist">Capitalist</option>
+                <option value="Imperialist">Imperialist</option>
+                <option value="Union">Union</option>
+            </select>
+
+            <label for="sortBy">Sort By:</label>
+            <select id="sortBy">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="alphabetical">Alphabetical</option>
+            </select>
+
+            <label for="searchCountry">Search by Name:</label>
+            <input type="text" id="searchCountry" placeholder="Enter country name...">
+        </section>
+
+        <section id="countryList">
+            <!-- Country information will be displayed here dynamically -->
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+
 </body>
 </html>
